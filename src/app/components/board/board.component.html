@@ -1,0 +1,12 @@
+<div class="container-fluid board">
+    <div class="row">
+        <div class="col-6">
+            <p>Flechas: {{arrows}}</p>
+        </div>
+    </div>
+    <div *ngFor="let row of board" class="row">
+        <div *ngFor="let square of row" class="col gameSquare" (click)="clickSquare($event, square)" (mouseover)="selectedSquare($event, square)" (mouseout)="unselectedSquare($event)" (contextmenu)="rightClick($event, square)">
+            <img src="{{square.srcImage}}" alt="" *ngIf="square.visible" class="imagen" >
+        </div>
+    </div>
+</div>

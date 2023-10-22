@@ -1,0 +1,18 @@
+.board{
+    max-width: 50vw;
+    .gameSquare{
+        cursor: pointer;
+        height: 20vh;
+        border: 1px solid black;
+    }
+}
+.selectedSquare{
+background-color: aqua;
+}
+.imagen{
+    width: 80%;
+    height: 80%;
+    margin-left: 10%; 
+    margin-top: 10%;   
+    display: block;
+}
